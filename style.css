@@ -1,0 +1,79 @@
+/*Importe da fonte poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --bg-color: #272B30;
+    font-size: 10px;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 3.2rem;
+    margin: 3.2rem;
+}
+
+.hide {
+    display: none;
+
+}
+
+input[type='text'],
+input[type='number'] {
+    background-color: var(--bg-color);
+    border: 0;
+    padding: .5rem 1rem;
+    box-shadow: inset -4px -4px 4px rgba(156, 156, 156, 0.50), inset 4px 4px 4px rgba(0, 0, 0, 0.50);
+    border-radius: 5px;
+    color: #fff;
+    margin: 1.6rem;
+}
+
+.botao {
+    border: 0;
+    padding: .5rem 2rem;
+    background: #AC62FF;
+    box-shadow: 0px 0px 10px #AC62FF;
+    border-radius: 5px;
+    color: var(--bg-color);
+    font-weight: 700;
+}
+
+.card {
+    background: linear-gradient(90deg, #2E3237 0%, #1A1C1F 103.7%);
+    border: 1px solid #333333;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 180px;
+    width: 250px;
+    margin: 1.6rem;
+
+}
+
+.card meter {
+    width: 200px;
+    height: 16px;
+}
+
+meter::-webkit-meter-optimum-value {
+    background: #AC62FF;
+}
+
+meter::-webkit-meter-bar {
+    background: #333333;
+}
+
+#tarefas {
+    display: flex;
+    flex-wrap: wrap;
+
+}
