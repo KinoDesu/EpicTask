@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <title>Epic Task</title>
+</head>
+
+<body>
+    <header>
+        <h1>Epic Task</h1>
+        <span class="pontos">0</span>
+    </header>
+
+    <form action="">
+        <label for="titulo" class="hide">título</label>
+        <input type="text" name="titulo" id="titulo" placeholder="título">
+        <label for="pontos" class="hide">pontos</label>
+        <input type="number" name="pontos" id="pontos" placeholder="pontos">
+
+        <label for="categoria" class="hide">categoria</label>
+        <select name="categoria" id="categoria">
+            <option value="analise">🔴 Análise</option>
+            <option value="teste">🟢 Teste</option>
+            <option value="bd">🟠 Banco de Dados</option>
+            <option value="ux">🟣 UI/UX</option>
+        </select>
+
+        <button id="botaoAdicionar" class="botao">adicionar</button>
+    </form>
+
+    <section id="tarefas">
+        <div role="card" class="card">
+            <h2>protótipo</h2>
+            <span>50 pontos</span>
+            <meter value="50" min="0" max="100"></meter>
+            <button class="botao">finalizar</button>
+        </div>
+    </section>
+
+
+</body>
+<script src="assets/js/Card.js"></script>
+<script src="assets/js/index.js"></script>
+
+</html>

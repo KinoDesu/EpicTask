@@ -1,0 +1,21 @@
+@keyframes slidein {
+    0% {
+        scale: 0;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+@keyframes remove {
+    0% {
+        transform: rotate(0deg);
+        scale: 1;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        scale: 0;
+    }
+}
